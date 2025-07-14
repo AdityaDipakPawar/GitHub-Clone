@@ -1,0 +1,82 @@
+.repo-list-wrapper {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 24px;
+  background: #181c24;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+}
+
+.repo-list-wrapper h2 {
+  color: #408ced;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.repo-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  max-height: 600px;
+  min-height: 200px;
+  overflow-y: auto;
+  padding-right: 8px;
+}
+
+/* Custom scrollbar styling */
+.repo-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.repo-list::-webkit-scrollbar-track {
+  background: #181c24;
+  border-radius: 4px;
+}
+
+.repo-list::-webkit-scrollbar-thumb {
+  background: #408ced;
+  border-radius: 4px;
+}
+
+.repo-list::-webkit-scrollbar-thumb:hover {
+  background: #306bb3;
+}
+
+.repo-card {
+  background: #23272f;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 20px 18px;
+  width: 320px;
+  color: #f1f6fd;
+  transition: box-shadow 0.2s, transform 0.2s;
+  cursor: pointer;
+  pointer-events: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.repo-card:hover {
+  box-shadow: 0 6px 24px rgba(64,140,237,0.15);
+  transform: translateY(-4px) scale(1.02);
+}
+
+.repo-card .repo-name {
+  font-size: 1.2rem;
+  color: #408ced;
+  font-weight: 700;
+  margin-bottom: 8px;
+  pointer-events: auto;
+}
+
+.repo-card .repo-description {
+  color: #bfc9d1;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.repo-card .repo-visibility {
+  font-size: 0.95rem;
+  color: #7fa1d6;
+} 

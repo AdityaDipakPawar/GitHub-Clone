@@ -1,0 +1,76 @@
+.repo-form-wrapper {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 32px 24px;
+  background: #181c24;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  color: #f1f6fd;
+}
+
+.repo-form-wrapper h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #408ced;
+}
+
+.repo-form-wrapper label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #bfc9d1;
+}
+
+.repo-form-wrapper input[type="text"],
+.repo-form-wrapper textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 18px;
+  border-radius: 6px;
+  border: 1px solid #2c3440;
+  background: #23272f;
+  color: #f1f6fd;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.repo-form-wrapper input[type="text"]:focus,
+.repo-form-wrapper textarea:focus {
+  border-color: #408ced;
+  outline: none;
+}
+
+.repo-form-wrapper .checkbox-label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+  font-weight: 500;
+}
+
+.repo-form-wrapper input[type="checkbox"] {
+  margin-right: 8px;
+  accent-color: #408ced;
+}
+
+.repo-form-wrapper button {
+  width: 100%;
+  padding: 12px;
+  background: #408ced;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.repo-form-wrapper button:hover {
+  background: #306bb3;
+}
+
+.repo-form-wrapper .error {
+  color: #ff6b6b;
+  margin-bottom: 16px;
+  text-align: center;
+} 

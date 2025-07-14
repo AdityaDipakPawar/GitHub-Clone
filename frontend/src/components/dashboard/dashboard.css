@@ -1,0 +1,198 @@
+#dashboard {
+  display: flex;
+  gap: 32px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 32px 24px;
+  background: #181c24;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+}
+
+#dashboard aside {
+  flex: 1 1 220px;
+  background: #23272f;
+  border-radius: 12px;
+  padding: 24px 16px;
+  color: #bfc9d1;
+  min-width: 200px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+#dashboard main {
+  flex: 2 1 600px;
+  background: #23272f;
+  border-radius: 12px;
+  padding: 32px 24px;
+  color: #f1f6fd;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+#dashboard h2, #dashboard h3 {
+  color: #408ced;
+  margin-bottom: 18px;
+}
+
+#search {
+  margin-bottom: 24px;
+}
+
+#search input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #2c3440;
+  background: #181c24;
+  color: #f1f6fd;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+#search input[type="text"]:focus {
+  border-color: #408ced;
+  outline: none;
+}
+
+.user-repos {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-height: 500px;
+  overflow-y: auto;
+  padding-right: 8px;
+}
+
+/* Custom scrollbar styling for dashboard */
+.user-repos::-webkit-scrollbar {
+  width: 8px;
+}
+
+.user-repos::-webkit-scrollbar-track {
+  background: #23272f;
+  border-radius: 4px;
+}
+
+.user-repos::-webkit-scrollbar-thumb {
+  background: #408ced;
+  border-radius: 4px;
+}
+
+.user-repos::-webkit-scrollbar-thumb:hover {
+  background: #306bb3;
+}
+
+.repo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background: #181c24;
+  border-radius: 8px;
+  border: 1px solid #2c3440;
+  transition: border-color 0.2s;
+}
+
+.repo-item:hover {
+  border-color: #408ced;
+}
+
+.repo-name-link {
+  color: #408ced;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.repo-name-link:hover {
+  color: #306bb3;
+  text-decoration: underline;
+}
+
+.repo-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.action-btn {
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.edit-btn {
+  background: #238636;
+  color: white;
+}
+
+.edit-btn:hover {
+  background: #2ea043;
+}
+
+.toggle-btn {
+  background: #9e6c03;
+  color: white;
+}
+
+.toggle-btn:hover {
+  background: #bf8700;
+}
+
+.delete-btn {
+  background: #da3633;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #f85149;
+}
+
+.no-repos {
+  text-align: center;
+  color: #bfc9d1;
+  font-style: italic;
+  padding: 20px;
+}
+
+.suggested-repo {
+  padding: 8px 0;
+  border-bottom: 1px solid #2c3440;
+}
+
+.suggested-repo:last-child {
+  border-bottom: none;
+}
+
+.suggested-repo h4 {
+  color: #f1f6fd;
+  margin: 0;
+  font-size: 1rem;
+}
+
+@media (max-width: 900px) {
+  #dashboard {
+    flex-direction: column;
+    gap: 18px;
+    padding: 18px 6px;
+  }
+  #dashboard aside, #dashboard main {
+    min-width: unset;
+    padding: 18px 10px;
+  }
+  .repo-item {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+  .repo-actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
